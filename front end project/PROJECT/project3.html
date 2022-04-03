@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .form{
+            background-color: rgb(171, 128, 211);
+        }
+        fieldset {
+            width: 30vw;
+            height: 95vh;
+            text-align: center;
+            background-color: aquamarine;
+            margin: auto;
+            border-radius: 20px;
+
+        }
+        #text{
+            resize: none;
+            /* resize: horizontal;
+            resize: vertical; */
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="https://www.Google.com/"_blank>
+            <fieldset>
+                <legend>  <strong>Personal Details</strong> </legend>
+                <label>Name: <input type="text" maxlength="30"></label><br><br>
+                <label>Password: <input type="text" maxlength="20"> </label><br><br>
+                <label>E-mail id: <input type="text"> </label><br><br>
+                Gender: <input type="radio" value="Male" name="Gender">Male
+                <!-- // name same select differ -->
+                <input type="radio" value="Male" name="Gender">Female <br><br>
+                <label>Contact: <input type="text"></label>
+                <h2>Educational Qualification</h2>
+                <label>Degree:</label>
+                <select name="Degree">
+                    <option value="Select Group">--Select Group--</option>
+                    <option value="MCA">MCA</option>
+                    <option value="B.A">BCA</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="B.SC">B.SC</option>
+                    <option value="B.TECH">B.TECH</option>
+                </select><br><br>
+                <label>Engineering:</label>
+                <select name="Mater degree">
+                    <option value="select group">--Engineering--</option>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                </select><br><br>
+                Hobbies: <input type="checkbox" name="Hobbies" value="game">Batball
+                <input type="checkbox" name="Hobbies" value="game">Reading book
+                <input type="checkbox" name="Hobbies" value="game">Music listning
+                <input type="checkbox" name="Hobbies" value="game">Football <br><br>
+                <h2>Address</h2>
+                <textarea name="Address" id="text" cols="50" rows="10" ></textarea><br><br>
+                Selcet file: <input type="file" name="Myfile"><br><br>
+                <input type="Submit" name="submit">
+                <input type="Reset" name="Reset">
+
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
